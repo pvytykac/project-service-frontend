@@ -1,0 +1,17 @@
+div.project-wrapper {
+  display: block;
+}
+
+div.project-wrapper > * {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+span.status-wrapper {
+  width: 430px;
+}
+
+button {
+    position: right 5px;
+}

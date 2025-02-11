@@ -1,0 +1,76 @@
+{
+  "groups": [
+    {
+      "id": "id-group-a",
+      "name": "Group A",
+      "projects": [
+        {
+          "id": "id-project-a-1",
+          "name": "Project A-1",
+          "status": {
+            "effectiveStatus": "ERROR",
+            "reportedStatus": "OK",
+            "overriddenStatus": "ERROR"
+          }
+        },
+        {
+          "id": "id-project-a-2",
+          "name": "Project A-2",
+          "status": {
+            "effectiveStatus": "OK",
+            "reportedStatus": "OK",
+            "overriddenStatus": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "id-group-b",
+      "name": "Group B",
+      "projects": [
+        {
+          "id": "id-project-b-1",
+          "name": "Project B-1",
+          "status": {
+            "effectiveStatus": "OK",
+            "reportedStatus": "ERROR",
+            "overriddenStatus": "OK"
+          }
+        },
+        {
+          "id": "id-project-b-2",
+          "name": "Project B-2",
+          "status": {
+            "effectiveStatus": "ERROR",
+            "reportedStatus": "ERROR",
+            "overriddenStatus": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "id-group-c",
+      "name": "Group C",
+      "projects": [
+        {
+          "id": "id-project-c-1",
+          "name": "Project C-1",
+          "status": {
+            "effectiveStatus": "WARN",
+            "reportedStatus": "WARN",
+            "overriddenStatus": null
+          }
+        },
+        {
+          "id": "id-project-c-2",
+          "name": "Project C-2",
+          "status": {
+            "effectiveStatus": "UNKNOWN",
+            "reportedStatus": "UNKNOWN",
+            "overriddenStatus": null
+          }
+        }
+      ]
+    }
+  ]
+}

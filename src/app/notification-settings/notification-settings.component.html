@@ -1,0 +1,12 @@
+@for (group of groups; track group; let index = $index) {
+<p>{{group.name}}</p>
+<ul>
+  @for (project of group.projects; track project; let index2 = $index) {
+  <li>{{project.name}}</li>
+  } @empty {
+  <p>no projects :S</p>
+  }
+</ul>
+} @empty {
+<p>no groups :S</p>
+}

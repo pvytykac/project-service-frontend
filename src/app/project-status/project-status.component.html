@@ -1,0 +1,25 @@
+<div class="project-wrapper">
+  <strong>{{project.name}}</strong>
+  <span class="status-wrapper">
+    <app-status [status]="project.status.reportedStatus" [showLabel]=[true]></app-status>
+    @if (project.status.overriddenStatus) {
+    <code>-> </code>
+    <app-status [status]="project.status.overriddenStatus" [showLabel]=[true]></app-status>
+    }
+  </span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    @if (project.status.overriddenStatus){
+    <button mat-menu-item>
+      <mat-icon svgIcon="eraser"></mat-icon>
+      <span>Delete Status Override</span>
+    </button>
+    }
+    <button mat-menu-item>
+      <mat-icon svgIcon="pen"></mat-icon>
+      <span>Override Reported Status</span>
+    </button>
+  </mat-menu>
+</div>
